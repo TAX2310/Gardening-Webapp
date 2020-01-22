@@ -1,0 +1,166 @@
+html, body {
+	margin: 0px;
+	height: 100%;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+.sidebar {
+	grid-area: sidebar;
+	overflow-y: scroll;
+	border: 1px solid #000;
+}
+#content {
+	grid-area: content;
+	border: 1px solid #000;
+}
+.footer{	
+	grid-area: footer;
+}
+/* .sideBarItem{
+	max-height: 50px;
+	max-width: 50px;
+	padding:3px;
+}
+.sideBarItem img{
+	max-height: 50px;
+	max-Width:50px;
+}
+*/
+i::before{
+	opacity: 0.7;
+}
+.options{
+	grid-area: options;
+	padding: 15px;
+}
+.colourSwatches{
+	box-sizing: border-box;
+	width: 40px;
+	max-width: 40px;
+	margin: 5px;
+}
+.wrapper {
+	display: grid;
+	height: 100%;
+	grid-template-columns: 0.6fr 1.4fr 1.7fr 0.3fr;
+	grid-template-rows: 0.2fr 0.2fr 2.4fr 0.4fr;
+	grid-template-areas: "drawGarden drawGarden drawGarden drawGarden" "sidebar draw-saveArea draw-saveArea draw-saveArea" "sidebar content content draw-rightPan" "draw-bottom draw-bottom draw-bottom draw-bottom";
+	background-color: #fff;
+	color: #444;
+}
+.box {
+	background-color: #b0dac1;
+	color: rgb(31, 30, 28);
+	font-size: 90%;
+}
+.btn {
+	background-color: #ffffff;
+	border: none;
+	color: rgb(31, 29, 29);
+	font-size: 26px;
+	cursor: pointer;
+}
+.btn:hover {
+	color: RoyalBlue;
+}
+.sideBtn{
+	background:transparent;
+	border: none;
+	font-size: 16px;
+	margin-bottom: 1px;
+}
+.sideBtn:hover {
+	color: rgb(225, 150, 65);
+}
+.navBtn{
+	background-color: #ffffff;
+	border: none;
+	color: rgb(31, 29, 29);
+	font-size: 30px;
+	cursor: pointer;
+	margin-left: 10%;
+	margin-top: 10px;
+}
+
+#homeBtn {
+	margin-left: 20%;
+}
+
+.navBtn:hover {
+	color: rgb(225, 150, 65);
+}
+.header {
+	font-family: Helvetica, sans-serif;
+	background-color:#8fb33e;
+}
+.logoImg {
+	height: 30px;
+	margin-left:10px;
+}
+
+.logoImg:hover {
+	opacity:0.7;
+}
+
+#drawGarden{
+	color:#21ad2a;
+   /*#0E0B16*/
+	grid-area: drawGarden;
+}
+.draw-saveArea {
+	grid-area: draw-saveArea;
+}
+.draw-rightPan {
+	grid-area: draw-rightPan;
+}
+.draw-bottom {
+	grid-area: draw-bottom;
+}
+#createGrid {
+	margin-bottom: 5px;
+	text-align: left;
+	box-shadow: 0px 0px 5px grey;
+	font-family: Roboto, sans-serif;
+	box-shadow: 0px 0px 1px black;
+	padding: 3px 3px;
+}
+#gardenCol, #gardenRow {
+	box-shadow: 0px 0px 1px black;
+	padding: 2px 5px;
+}
+.sideDrawImg {
+	width: 40%;
+}
+/* Style the tab */
+.darwTab {
+	overflow: hidden;
+	border: 1px solid rgba(64, 177, 70, 0.507);
+	background-color: #53c5369c;
+}
+/* Style the buttons inside the tab */
+.darwTab button {
+	background-color: inherit;
+	float: left;
+	border: none;
+	cursor: pointer;
+	padding: 2px 3px;
+	transition: 0.3s;
+	font-size: 13px;
+}
+/* Change background color of buttons on hover */
+.darwTab button:hover {
+	background-color: rgba(221, 122, 56, 0.74);
+}
+/* Create an active/current tablink class */
+.darwTab button.active {
+	background-color: rgba(15, 110, 63, 0.61);
+}
+/* Style the tab content */
+.tabcontent {
+	display: none;
+	padding: 6px 12px;
+	border: 1px solid #ccc;
+	border-top: none;
+}

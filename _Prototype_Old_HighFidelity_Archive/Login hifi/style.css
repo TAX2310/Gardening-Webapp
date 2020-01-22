@@ -1,0 +1,119 @@
+/*CSS to style the HTML elements*/
+html {   
+    background: #161718;
+}
+
+*{   
+    margin: 0;
+    padding: 0; 
+}
+
+body {   
+    font-family: Calibri, sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #333; 
+}
+
+.header { 
+    background: #161718;
+    border-bottom: 2px solid #21ad2a;
+    height: 150px;
+}
+  
+.userImg{
+    position: absolute;
+    width: 120px;
+    height: 100px;
+    right: 20px;
+    top: 20px;
+}
+
+
+.header h1{ 
+    color: #21ad2a;
+    position: absolute;
+    left: 200px;
+    top: 20px;
+    font-size: 70px;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+}
+
+.main-div h4{
+    color: #FFFFFF;
+    font-size: 30px;
+    position: absolute;
+    left: 250px;
+    top: 200px;
+}
+
+
+.main-div input[type=email]{
+    position: absolute;
+    left:250px;
+    top: 270px;
+    width: 300px;
+    height: 30px;
+    font-size: 16px;
+}
+
+ 
+.main-div input[type=password]{
+    position: absolute;
+    left:250px;
+    top: 320px;
+    width: 300px;
+    height: 30px;
+    font-size: 16px;
+}
+
+.main-div input:focus{
+    border: 1px solid #FFFFFF;
+}
+
+.main-div button{
+    position: absolute;
+    left:250px;
+    top: 370px;
+    width: 100px;
+    height: 35px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+ 
+.main-div button:hover{
+    background: #21ad2a;
+}
+
+.main-div, .loginSuccessful-div {
+    display: none;
+}
+
+.loginSuccessful-div h4{
+    color: #FFFFFF;
+    font-size: 30px;
+    position: absolute;
+    left: 250px;
+    top: 200px;
+}
+
+.loginSuccessful-div p{
+    color:#FFFFFF;
+    position: absolute;
+    left: 250px;
+    top: 250px;
+}
+
+.loginSuccessful-div button{
+ position: absolute;
+    left:250px;
+    top: 300px;
+    width: 100px;
+    height: 35px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.loginSuccessful-div button:hover{
+    background: #21ad2a;
+}

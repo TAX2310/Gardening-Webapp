@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Garden Assistant Login</title>
+        <!--The below link element ensures this HTML file is connected to the CSS stylesheet.-->
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	<body>
+        <div class="header">
+            <h1>Garden Assistant</h1>
+            <img class="userImg" src="assets/user-img.png">
+
+        </div>
+        
+        <!--The below div class is used to provide the structure for the login form, each element has an id which will be used in the JavaScript file 'index.js' in order to allow the login system to function.-->
+        <div id="login-form" class="main-div">
+            <h4>Login</h4>
+            <input id="emailField" type="email" placeholder="Email address"/>
+            <input id="passwordField" type="password" placeholder="Password"/>
+            <!--When the below button is clicked, the 'onClick' method will call the 'login()' function in index.js to provide functionality.-->
+            <button onClick="login()">Login</button>
+        </div>
+        
+        <!--The below div class is used to provide the structure for the logged in state, each element has an id which will be used in the JavaScript file 'index.js' in order to allow the login system to function.-->
+        <div id="logged-in" class="loginSuccessful-div">
+            <h4>Welcome</h4>
+            <p id="username">Welcome, you are successfully logged in!</p>
+            <!--When the below button is clicked, the 'onClick' method will call the 'logout()' function in index.js to provide functionality.-->
+            <button onclick="logout()">Log out</button>
+        </div>
+        
+        <!--The below script code is used to establish a connection to the Firebase database.-->
+        
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-app.js"></script>
+
+        <!-- Below are two SDKs to allow Firebase products (libraries) to be used. I have therefore added the authentication library so that when the user enters their email address and password, these values will be recorded and checked with the Firebase database to ensure this account does exist. It is important to note that I have already created a test account in the Firebase console.-->
+        <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-auth.js"></script>
+        
+        <script>
+          // Your web app's Firebase configuration
+          var firebaseConfig = {
+            apiKey: "AIzaSyD1KOIraSgTFRdeNy6CeebVfBtMHiXnZlI",
+            authDomain: "gardeningapplogintest.firebaseapp.com",
+            databaseURL: "https://gardeningapplogintest.firebaseio.com",
+            projectId: "gardeningapplogintest",
+            storageBucket: "gardeningapplogintest.appspot.com",
+            messagingSenderId: "1202058069",
+            appId: "1:1202058069:web:0ed500dabd68e1f3ec75dc",
+            measurementId: "G-Z9NZNCJMKV"
+          };
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+          firebase.analytics();
+        </script>
+        
+        <!--The below script tag allows this HTML file 'index.html' to connect to the JavaScript file 'index.js'.-->
+        <script src="index.js"></script>
+    </body>
+</html>

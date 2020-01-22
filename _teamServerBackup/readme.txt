@@ -1,0 +1,1 @@
+the directory gets backed-up is all files under : home/sysadmin/
